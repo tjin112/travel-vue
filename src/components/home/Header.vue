@@ -8,12 +8,15 @@
         <div class="input">
             <span class="iconfont">&#xe632;</span>
             输入城市/游玩/主题</div>
-        <div class="header-right">城市<span class="iconfont arrow-icon">&#xe62d;</span></div>
+        <div class="header-right">{{this.city}}<span class="iconfont arrow-icon">&#xe62d;</span></div>
     </div>
 </template>
 <script>
 export default {
-    name:'HomeHeader'
+    name:'HomeHeader',
+    props:{
+        city:String
+    }
 }
 </script>
 <style lang="less" scoped>
